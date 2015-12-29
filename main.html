@@ -1,0 +1,439 @@
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>DeAnte Brown</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body>
+  {{> navigation}}
+  {{> hidden}}
+  {{> footer}}
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+
+<template  name="hidden">
+  {{#if showontour}}
+  {{> aboutme}}
+  {{> undergraduate}}
+  {{> work}}
+  {{> skills}}
+  {{> resume}}
+  {{else}}
+  {{> home}}
+  {{/if}}
+</template>
+
+
+  <template name="navigation">
+  <nav class="grey darken-3" role="navigation">
+    <div id="nav" class="nav-wrapper container"><a id="logo-container" href="#" class="material-icons">flash_on</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#undergraduate">Undergraduate Studies</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#undergraduate">Undergraduate Studies</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</template>
+
+<template id="home" name="home">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center deep-purple-text text-accent-4">DeAnte Brown</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">"Geeks are people who love something so much that all the details matter." <br> ~ Marissa Mayer</h5>
+      </div>
+      <div class="row center">
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light deep-purple accent-4">Take the Tour </a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center grey-text"><i class="material-icons">library_books</i></h2>
+            <h5 class="center">Student</h5>
+
+            <p class="light">In 2012, I enrolled into The University of South Carolina. I started out as a Biomedical Engineer major, but then switched to Integrated Information Technology. I graduate in May of 2016.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center grey-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Employee</h5>
+
+            <p class="light">The Summer of 2015, I was hired as a Systems Engineer Intern, with VC3. I am still interning with them today.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center grey-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Volunteer</h5>
+
+            <p class="light">As the manager of the Men's Soccer team at The University of South Carolina, I have had many oppurtunties to volunteer and give back to the commmunity.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+</template>
+
+
+<template name="footer">
+  <footer class="page-footer deep-purple accent-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4"><iframe src="https://services.cognitoforms.com/f/K7gJnBSNL0muUUJtHfDtoQ?id=1" style="position:relative;width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="447" width="100%"></iframe>
+        <script src="https://services.cognitoforms.com/scripts/embed.js"></script> </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="amber-text text-accent-4" href="http://www.vc3.com/"></a></li>
+            <li><a class="amber-text text-accent-4" href="https://www.sc.edu/"></a></li>
+            <li><a class="amber-text text-accent-4" href="http://bulletin.sc.edu/preview_program.php?catoid=91&poid=8110&returnto=11038"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a href="https://www.linkedin.com/pub/deante-brown/b0/87a/a02">
+
+            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View DeAnte Brown's profile on LinkedIn">
+
+            </a></li>
+
+            <li><a href="https://twitter.com/De_DeBrown" class="twitter-follow-button" data-show-count="false">Follow @De_DeBrown</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+
+            <li>><a target="_blank" title="follow me on facebook" href="https://www.facebook.com/deante.brown.3"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="amber-text text-darken-4" href="http://materializecss.com">DeAnte Brown</a>
+      </div>
+    </div>
+  </footer>
+</template>
+
+
+<template name="aboutme">
+        <div id="aboutme" class="section">
+          <div class="container">
+
+          <h5 class="deep-purple-text text-accent-4">About Me</h5>
+
+        <b> <h7> Who I am </h7> </b>
+<p>First off, thank you for visiting my personal website! My name is DeAnte Brown. I am enrolled in the Integrated Information Technology (iIT) program at the University of South Carolina. That's right iIT! This program is a little different than an ordinary IT program. Here at the University of South Carolina IT skills are not just simply taught to you through ordinary means such as: books, power points or exams. The iIT program takes it a step further and actually presents its' students with live projects such as: building a computer from scratch, publishing your own website, being a part of a project team and running your own project. This E-portfolio is just a small example of the projects that we do throughout the iIT program here at the University of South Carolina.</p>        <b>
+  <h7> Interest, Goals & Aspirations </h7> </b>
+<p>In May of 2016, I will have completed my undergraduate studies at the University of South Carolina. Upon my graduation, I will either continue my education with Graduate School, or join the working force. Being the knowledge seeker that I am I plan to do both! I plan to use my IT background and break into the business world, more specifically in the business world I will work for a few years until I am able to comfortably afford whatever Graduate school I choose. As of right now I plan to go to graduate school to obtain my MBA. Once I do complete that I will be ready to truly take on whatever comes my way. Although I do have a strong interest in the business world, I also have an interest in other fields of IT. Such as: hardware/software development, web development, cyber security and project management. </p>        </div>
+        </div>
+</template>
+
+<template name="undergraduate">
+  <div class="container">
+    <div class="divider"></div>
+
+
+  <div id="undergraduate" class="section">
+
+
+
+    <h5 class="deep-purple-text text-accent-4">Undergraduate Studies</h5>
+
+
+
+    <div class="row">
+            <div class="col s12">
+              <div class="card pull-right">
+                <div class="card-image">
+                  <img src="http://i.imgur.com/CLz3DKr.jpg">
+                  <span class="card-title">University of South Carolina</span>
+                </div>
+                <div class="card-content">
+                  <p><table>
+                  <thead>
+                    <tr>
+                        <th data-field="course">Course</th>
+                        <th data-field="description">Course Description</th>
+                        <th data-field="final">Final Grade</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                     <td>ITEC 590: IT Security for Managers</td>
+                     <td> Theory and practice of computer security, including security policies, authentication, digital certificates, firewalls, malicious code, legal and ethical issues, and incident handling.</td>
+                     <td>B</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 564: Project Management for Information Systems</td>
+                     <td>Application of project management software, technologies, and practices to the design and implementation of real-world information technology projects.</td>
+                     <td>A</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 560: Analysis and Applications of Project Management Software</td>
+                     <td>Project management principles and standard practices, including software applications for project management.</td>
+                     <td>A</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 544: Training Systems</td>
+                     <td>Corporate training of employees: needs assessment, instructional design, implementation, evaluation, and management.</td>
+                     <td>B</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 447: Management of Information Technology</td>
+                     <td>Overview of current practices and trends in end-user technology and information system management.</td>
+                     <td>A</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 445: Advanced Networking</td>
+                     <td>Advanced administration of client/server networks with major emphasis on network operating system software.</td>
+                     <td>A</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 444: Corporate Training & Development</td>
+                     <td>Corporate training of employees: needs assessment, instructional design, implementation, evaluation, and management.</td>
+                     <td>B+</td>
+                   </tr>
+
+              <tr>
+                     <td>ITEC 362: Web-Based Support Systems</td>
+                     <td>The development of Web-based information systems for support and training. Communication technologies for the global dissemination of information, including static information and multimedia content.</td>
+                     <td>A</td>
+                   </tr>
+
+                  </tbody>
+                </table></p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.sc.edu/">The University of South Carolina Homepage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+  </div>
+</div>
+</template>
+
+<template name="work">
+  <div id="work" class="section">
+    <div class="container">
+      <div class="divider"></div>
+    <h5 class="deep-purple-text text-accent-4">Work Experience</h5>
+    <b> <h7>VC3</h7> </b>
+
+
+    <div class="row">
+            <div class="col s12">
+              <div class="card pull-right">
+                <div class="card-image">
+                  <img src="http://i.imgur.com/I2gcNIz.jpg">
+                  <span class="card-title">VC3</span>
+                </div>
+                <div class="card-content">
+                  <p>The Summer of 2015, I had my first real IT job with company called VC3. VC3 is an IT company that has been on the leading edge of Information Technology since 1994, providing customer-oriented solutions to both commercial and public sector customer. VC3's most distinguished product is with cloud computing. Thanks to cloud computing VC3's long term strategic goals have been made into reality.</p>
+                  <br>
+                  <p>At VC3, I am a Systems Engineer Intern and I must say...I love it! I am being exposed to so many different fields within IT such as: working with servers, hardware, software, computer viruses and even dealing with customers (face-to-face and remotely). The amount of experience and knowledge gained from this internship is truly immeasurable. Thanks to the people at this company and how this company is ran, I now have a better idea of what I want from the future. I now know my strengths and weakness a lot better than I did before.</p>
+                  <br>
+                  <p>This experience truly opened my eyes to how the working world really works. Before I thought make the grades and I'll be OK, but now I no longer have such a premature thoughts. Sure grades do help you get the Internship, which in term will eventually lead to a decent job. However, classes only teach you the basics of that subject. For example, I took a web design class my sophomore year in college and from that class I did learn a few things about web design and could make a simple website. Now at VC3 there are a lot of great minds, great minds that I picked at and learned from as much as possible. The result of that is this E-Portfolio that I have created. </p>
+                  </div>
+                <div class="card-action">
+                  <a href="http://www.vc3.com/">VC3 Homepage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <b> <h7>Men's Soccer Manager</h7> </b>
+
+  <div class="row">
+          <div class="col s12">
+            <div class="card pull-right">
+              <div class="card-image">
+                <img src="http://i.imgur.com/j5e8f1O.jpg">
+                <span class="card-title">The Graveyard ~ Home to Men's & Women's Soccer</span>
+              </div>
+              <div class="card-content">
+                <p>Created promotional videos for the University Soccer team containing their seasonal workouts, and all access road trips.
+            Responsibilities are: managing equipment, filming, assisting with practices, attending to the needs of head coach Mark Berson as well as the assistant coaches, ensuring all travel gear and material are ready for travel, and assist athletic trainers with their duties.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.sc.edu/">University of South Carolina Homepage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+</template>
+
+<template name="skills">
+  <div id="skills" class="section">
+    <div class="container">
+      <div class="divider"></div>
+    <h5 class="deep-purple-text text-accent-4">Skills</h5>
+
+    <table>
+           <thead>
+             <tr>
+                 <th data-field="id">Technical Skills</th>
+                 <th data-field="name">Business Skills</th>
+             </tr>
+           </thead>
+
+           <tbody>
+             <tr>
+               <td>Human computer interaction: human factors of interactive software, methods to develop and assess interfaces, interaction styles, and design considerations
+</td>
+               <td>Practice creating training documentation for new employee onboarding.</td>
+             </tr>
+             <tr>
+               <td>Practice in Microsoft Windows Server 2012R2 Active Directory
+</td>
+               <td>Able to effectively communicate in a technical and business environment</td>
+             </tr>
+             <tr>
+               <td>Advanced administration of client/server networks with major emphasis on network operating system software
+</td>
+               <td>Proven ability to work well in teams</td>
+             </tr>
+             <tr>
+               <td>Project management principles and standard practices, including software applications for project management
+</td>
+               <td>Ability to analyze quantitative data</td>
+             </tr>
+             <tr>
+               <td>Core skills and techniques of modern business applications, including spreadsheets and databases; EX: Microsoft Excel & Access
+</td>
+               <td>Top-Notch research skills</td>
+             </tr>
+             <tr>
+               <td>Understanding of current computer hardware and software through computer building, repairing, and troubleshooting
+</td>
+               <td>Ability to create and/or edit written reports</td>
+             </tr>
+             <tr>
+               <td>Understanding of the essential concepts of computer networks, including standards, topologies, security, media, switching, routing, and more
+</td>
+               <td>Ability to effectively and efficiently manage projects</td>
+             </tr>
+             <tr>
+               <td>Practice with using Oracle SQL Developer; techniques for working with enterprise-level database systems
+</td>
+               <td>Ability to use creativity, reasoning, past experiences, information and available resources to resolve issues </td>
+             </tr>
+             <tr>
+               <td>Core software development principles, application development from pseudo code and flow charting through coding process
+</td>
+               <td>Strong work ethic</td>
+             </tr>
+             <tr>
+               <td>Practice in developing websites that are W3C approved; Web-based information systems for support and training. Communication technologies for the global dissemination of information, including static information and multimedia content.
+</td>
+               <td>Desire to always better oneself</td>
+             </tr>
+             <tr>
+               <td>Practice of computer security, including security policies, authentication, digital certificates, firewalls, malicious code, legal and ethical issues, and incident handling.
+</td>
+               <td>Proficiency with computer software programs</td>
+             </tr>
+             <tr>
+               <td>Theory, design, and implementation of technology-based training systems, including hardware and software solutions
+</td>
+               <td>Ability to sell and influence others</td>
+             </tr>
+           </tbody>
+         </table>
+
+
+
+  </div>
+</div>
+</template>
+
+<template name="resume">
+  <div class="container">
+  <div class="divider"></div>
+  <div id="resume" class="section">
+    <h5 class="deep-purple-text text-accent-4">Resume</h5>
+<a href="https://drive.google.com/file/d/0B4L47Ym11XusWEZTWS1maXVEZzA/view">View Resume</a>
+  </div>
+</div>
+</template>
+
+
+
+
+<template name="contactme">
+  <div class="container">
+
+      <div id="contactme" class="section">
+        <div class="divider"></div>
+        <p><iframe src="https://services.cognitoforms.com/f/K7gJnBSNL0muUUJtHfDtoQ?id=1" style="position:relative;width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="447" width="100%"></iframe>
+      <script src="https://services.cognitoforms.com/scripts/embed.js"></script></p>
+      </div>
+    </div>
+</template>
